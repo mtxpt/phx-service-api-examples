@@ -10,7 +10,7 @@ on FIX-based trading are listed as follows.
 ## Service API vs FIX API
 
 Detailed documentation on the Phoenix Prime Service API and the Phoenix Prime FIX endpoints can be found in the 
-Phoenix Prime [official documentation](https://api-reference.qat.platform.matrixport.io/docs/en-us/phoenix.html#phoenix). 
+Phoenix Prime [official documentation](https://www.matrixport.com/docs/en-us/phoenix.html). 
 In general, the FIX endpoints provide trade execution (e.g. NewOrderSingle, OrderStatusRequest, etc.) and market data,
 whereas REST endpoints (labelled as "Service API" in the documentation) expose additional management services
 which are not included in the FIX standard, such as account management, or risk and margin related functions. 
