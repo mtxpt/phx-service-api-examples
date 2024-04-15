@@ -1,0 +1,12 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# intellij
+.idea/
+
+# vim
+*.sw[po]
