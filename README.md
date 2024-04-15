@@ -1,19 +1,20 @@
-# Phoenix Prime REST API Package 
+# Phoenix Prime Service API Examples Package 
 
-This repository provides a demo of exchange connection through Phoenix REST API endpoints. Relevant repositories 
+This repository provides examples for the Phoenix Prime Service API endpoints. Relevant repositories 
 on FIX-based trading are listed as follows.
 
   - [Phoenix Prime FIX Foundation Package](https://github.com/mtxpt/phx-fix-base)
   - [Phoenix Prime FIX Client Examples Package](https://github.com/mtxpt/phx-fix-examples)
 
 
-## REST API vs FIX API
+## Service API vs FIX API
 
-Phoenix Prime REST and FIX endpoints details can be found in the Phoenix Prime [official documentation](https://api-reference.qat.platform.matrixport.io/docs/en-us/phoenix.html#phoenix). 
+Detailed documentation on the Phoenix Prime Service API and the Phoenix Prime FIX endpoints can be found in the 
+Phoenix Prime [official documentation](https://api-reference.qat.platform.matrixport.io/docs/en-us/phoenix.html#phoenix). 
 In general, the FIX endpoints provide trade execution (e.g. NewOrderSingle, OrderStatusRequest, etc.) and market data,
 whereas REST endpoints (labelled as "Service API" in the documentation) expose additional management services
 which are not included in the FIX standard, such as account management, or risk and margin related functions. 
-The following requests have to be queried through REST endpoints:
+The following services are exposed as REST endpoints:
   - Get assets
   - Fund transfer
   - Get margin type
@@ -32,6 +33,7 @@ The project requires
 
 ## Usage and Configuration 
 
-Most Phoenix REST endpoints are implemented in `entrexapi/client.py`. 
-The script `sample_test.py` corresponds to simple queries for wallet balances and positions. 
-Before running `sample_test.py`, insert your Phoenix API and secret keys of the account into `secret.json`. 
+Most Phoenix Prime Service API endpoints are implemented in `phx.service_api.client.py`. 
+The script `tests.sample_test.py` corresponds to simple queries for wallet balances and positions. 
+Before running `tests.sample_test.py`, insert your Phoenix API and secret keys of the account into 
+`tests.secret.json`. 
